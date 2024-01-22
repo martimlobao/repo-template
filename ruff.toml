@@ -1,0 +1,24 @@
+target-version = "py311"
+line-length = 99
+select = ["ALL"]
+ignore = [
+    "ANN101",  # missing-type-self not needed
+    "ANN102",  # missing-type-cls not needed
+    "COM",  # out-blacks black
+    "D",
+    "EM",
+    "G001",
+    "G004",
+    "TRY",
+]
+fixable = ["ALL"]
+
+[per-file-ignores]
+"*_test.py" = ["INP001", "S101"]
+"test_*.py" = ["INP001", "S101"]
+
+[pydocstyle]
+convention = "google"
+
+[pycodestyle]
+max-doc-length = 80

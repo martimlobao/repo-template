@@ -1,2 +1,3 @@
-# repo-template
+# My repo template
+
 My Pants+Poetry Repo Template
